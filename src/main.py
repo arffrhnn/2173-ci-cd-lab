@@ -1,5 +1,5 @@
 import pandas as pd
-def load_data():
- # Example DataFrame
- data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
- return pd.DataFrame(data)
+def load_data(filepath="data/IBM_Churn.csv"):
+
+ df = pd.read_csv(filepath)
+ return df
